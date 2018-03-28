@@ -1,3 +1,92 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.add-restaurant {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+.img-rest {
+  width: 870px;
+  height: 300px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  list-style: none;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  &:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 250, 250);
+  }
+}
+
+body {
+  background-color: #F4EEC0;
+  color: #7E6752;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #323232;
+  &:hover {
+  color: #61B292;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  color: black;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  font-weight: light;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.details {
+  text-align: center;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews {
+  background-color: white;
+  padding: 10px;
+  margin: 10px auto;
+}

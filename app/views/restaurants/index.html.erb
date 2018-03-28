@@ -1,13 +1,19 @@
 <div class="container">
-
-<h1>Restaurants</h1>
-
-<%= link_to "Add a new restaurant", new_restaurant_path %>
-
-<% @restaurants.each do |restaurant| %>
-  <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
-  <p><%= restaurant.address %></p>
-  <p><%= restaurant.category %></p>
-<% end %>
-
+  <div class="title">
+    <h1><strong>Restaurants</strong></h1>
+  </div>
+  <div class="add-restaurant"><p><i class="fas fa-plus-circle"></i> <%= link_to "Add a Restaurant", new_restaurant_path %> </p></div>
+  <div class="all-restaurants">
+    <div class="row">
+      <div>
+        <ul>
+          <% @restaurants.each do |restaurant| %>
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><h3><%= link_to restaurant.name, restaurant_path(restaurant) %></h3>
+            <p><%= restaurant.address.capitalize %></p>
+            <p><%= restaurant.category.capitalize %></p></li>
+            <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
