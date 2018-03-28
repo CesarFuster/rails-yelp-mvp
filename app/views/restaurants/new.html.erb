@@ -1,12 +1,20 @@
 <div class="container">
-  <h1>New</h1>
-  <p><%= simple_form_for(@restaurant) do |f| %>
+
+  <div class="title">
+    <h1><strong>New</strong></h1>
+  </div>
+
+  <div>
+    <p><%= simple_form_for(@restaurant) do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
     <%= f.submit "Add", class: "btn btn-primary" %>
     <% end %></p>
+  </div>
 
-    <p><i class="fas fa-arrow-circle-left"></i> <%= link_to "Back to All Restaurants", restaurants_path %></p>
+  <div>
+      <p><i class="fas fa-arrow-circle-left"></i> <%= link_to "Back to All Restaurants", restaurants_path %></p>
+  </div>
 
 </div>
